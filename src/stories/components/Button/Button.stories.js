@@ -4,7 +4,7 @@ import Button from './Button';
 import ButtonMDXdoc from './ButtonMDXdoc.mdx';
 
 export default {
-    title: 'Components/Button',
+    title: 'Base/Button',
     component: Button,
     argTypes: { onClick: { action: 'clicked' } },
     parameters: {

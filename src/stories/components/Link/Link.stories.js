@@ -4,7 +4,7 @@ import Link from './Link';
 import LinkMDXdoc from './LinkMDXdoc.mdx';
 
 export default {
-    title: 'Components/Link',
+    title: 'Base/Link',
     component: Link,
     argTypes: { onClick: { action: 'clicked' } },
     parameters: {
