@@ -1,0 +1,45 @@
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs";
+import Link from "./Link";
+
+<Meta title="Link" component={Link} />
+
+# Link
+
+Link is the primary component. It has two possible states.
+
+- [Primary](#primary)
+- [Secondary](#secondary)
+- [PrimaryDisabled](#PrimaryDisabled)
+- [SecondaryDisabled](#SecondaryDisabled)
+
+## Primary
+
+By passing 'primary' to variant prop you can get Primary Link
+
+<Canvas>
+  <Story id="components-link--primary" />
+</Canvas>
+
+## Secondary
+
+By passing 'secondary' to variant prop you can get Secondary Link
+
+<Canvas>
+  <Story id="components-link--secondary" />
+</Canvas>
+
+## Primary Disabled
+
+By passing 'primary' to variant prop and adding disabled you can get Primary Link Disabled
+
+<Canvas>
+  <Story id="components-link--primary-disabled" />
+</Canvas>
+
+## Secondary Disabled
+
+By passing 'secondary' to variant prop and adding disabled you can get Secondary Link Disabled
+
+<Canvas>
+  <Story id="components-link--secondary-disabled" />
+</Canvas>
