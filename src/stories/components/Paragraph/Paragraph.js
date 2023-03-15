@@ -1,0 +1,32 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import { StyledParagraph } from './Paragraph.styled';
+
+const Paragraph = ({
+    id,
+   text,
+   className
+}) => (
+    <StyledParagraph id={id} className={className}>
+        <span>{text}</span>
+    </StyledParagraph>
+);
+
+
+Paragraph.propTypes = {
+    /**
+     * TextBox id
+     */
+    id: PropTypes.string,
+    /**
+     * Which text to be displayed
+     */
+    text: PropTypes.node.isRequired,
+};
+
+Paragraph.defaultProps = {
+    id: 'paragraph-id',
+    text: "Content",
+};
+
+export default Paragraph

@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { StyledButton } from './Button.styled';
 
 const Button = ({
-    id, label, disabled, onClick, onKeyPress, className, btnStyle, width, mt, mb,
+    id, label, disabled, onClick, onKeyPress, className, btnStyle, width, mt, mb, ml, mr
 }) => (
-    <StyledButton id={id} disabled={disabled} onClick={onClick} onKeyPress={onKeyPress} className={className} btnStyle={btnStyle} width={width} mt={mt} mb={mb}>
+    <StyledButton id={id} disabled={disabled} onClick={onClick} onKeyPress={onKeyPress} className={className} btnStyle={btnStyle} width={width} mt={mt} mb={mb} ml={ml} mr={mr}>
         {label}
     </StyledButton>
 );
@@ -48,6 +48,14 @@ Button.propTypes = {
      */
     mb: PropTypes.number,
     /**
+     * Optional margin-left
+     */
+    ml: PropTypes.number,
+    /**
+     * Optional margin-right
+     */
+    mr: PropTypes.number,
+    /**
      * Optional width of button
      */
     width: PropTypes.string,
@@ -63,6 +71,8 @@ Button.defaultProps = {
     btnStyle: 'primary',
     mt: 0,
     mb: 0,
+    ml:0,
+    mr:0,
     width: '',
 };
 

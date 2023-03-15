@@ -11,12 +11,14 @@ export const StyledButton = styled.button`
     width: ${props => props.width === ''  ? '100%' : props.width};
     margin-top: ${({ mt }) => `${mt}px`};
     margin-bottom: ${({ mb }) => `${mb}px`};
+    margin-left: ${({ ml }) => `${ml}px`};
+    margin-right: ${({ mr }) => `${mr}px`};
     font-size: 18px;
     font-weight: 500;
     line-height: 1.35;
     padding: 15px 20px;
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: 0;
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     
     @media only screen and (min-width: "768px") {            
