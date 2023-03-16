@@ -22,7 +22,7 @@ export const StyledLink = styled.a`
         &:hover {
             background-color: ${props => props.variant === "primary" ? '#C25E5E' : '#728434'};
             transform: translateY(-3px);
-            box-shadow: 0 0.7rem 1.7rem rgba(0,0,0, 0.8);
+            box-shadow: 0 0.7rem 1.6rem rgba(0,0,0, 0.8);
             color: white;
             cursor: pointer;
       }
