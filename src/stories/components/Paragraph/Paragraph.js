@@ -22,11 +22,16 @@ Paragraph.propTypes = {
      * Which text to be displayed
      */
     text: PropTypes.node.isRequired,
+    /**
+     * Optional component class name
+     */
+    className: PropTypes.string
 };
 
 Paragraph.defaultProps = {
     id: 'paragraph-id',
     text: "Content",
+    className:""
 };
 
 export default Paragraph
