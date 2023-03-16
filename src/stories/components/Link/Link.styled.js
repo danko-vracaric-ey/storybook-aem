@@ -12,7 +12,10 @@ export const StyledLink = styled.a`
       position:relative; 
       width: ${props => props.width === ''  ? '100%' : props.width};
       text-align: center;
- 
+
+      @media (max-width: 768px) {
+        padding: 0.15rem 1rem;
+  }
     // NOT DISABLED
     ${(props) => !props.disabled
         && css`
@@ -26,11 +29,7 @@ export const StyledLink = styled.a`
       &:active {
             box-shadow: 0 0.3rem 0.3rem rgba(0,0,0, 0.4);
             transform: translateY(3px);
-      }
-      @media only screen and (min-width: "768px") {            
-            width: auto;        
-            padding: 0.15rem 0.15rem;
-        }       
+      } 
         `}
     
     //DISABLED
@@ -39,10 +38,6 @@ export const StyledLink = styled.a`
          color: black;
         border: 1px solid black;
         cursor: not-allowed;
-        transition: none; 
-        @media only screen and (min-width: "768px") {            
-            width: auto;        
-            padding: 0.15rem 0.15rem;
-        }      
+        transition: none;      
     `}      
 `

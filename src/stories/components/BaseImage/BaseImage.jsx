@@ -3,43 +3,17 @@ import Image from "../../assets/images/spaceX-launch.webp";
 import PropTypes from "prop-types";
 import { StyledBaseImage } from "./BaseImage.styled";
 
-// const BlockImage = ({
-//     src,
-//     alt,
-//     width,
-//     height,
-//     imageClass,
-//     wrapperClass,
-//     objectFitClass,
-//   }) => {
-//     if (!src) src = ''
-//     if (!srcset) srcset = ''
-//     if (!alt) alt = ''
-//     if (!width) width = ''
-//     if (!height) height = ''
-//     if (!imageClass) imageClass = ''
-//     if (!objectFitClass) objectFitClass = ''
-
-//     return `<div${wrapperClass ? ` class="${wrapperClass}"` : ''}>${
-//       src
-//         ? `<img class="BaseImage ${imageClass} ${objectFitClass} lazyload" data-src="${src}" data-srcset="${srcset}" alt="${alt}" width="${width}" height="${height}" loading="lazy" />`
-//         : ''
-//     }</div>`
-//   }
-
-// export default BlockImage
-
 const BaseImage = ({
   src,
   alt,
   width,
   height,
   imgClass,
-  wrapperClass,
+  className,
   objectFit,
 }) => {
   return (
-    <StyledBaseImage className={wrapperClass}>
+    <StyledBaseImage className={className}>
       <img
         className={imgClass}
         src={src}
@@ -81,7 +55,7 @@ BaseImage.propTypes = {
   /**
    * Scale image to fit its container
    */
-  objectFit: PropTypes.oneOf(["fill", "cover", "contain", "scale-down"]),
+  objectFit: PropTypes.oneOf(["fill", "cover", "contain", "scale-down, none"]),
 };
 
 BaseImage.defaultProps = {
