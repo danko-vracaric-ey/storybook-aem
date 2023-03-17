@@ -8,13 +8,12 @@ const Link = ({
     onClick,
     disabled,
     variant,
-    icon,
-    iconPosition,
     width,
+    className,
     ...otherProps
 }) => (
-    <StyledLink id={id} onClick={onClick} disabled={disabled} variant={variant} width {...otherProps}>
-        {text} &rarr;
+    <StyledLink id={id} onClick={onClick} disabled={disabled} variant={variant} width={width} className={className} {...otherProps}>
+        {text}
     </StyledLink>
 );
 
@@ -44,14 +43,20 @@ Link.propTypes = {
      * Optional width of link
      */
      width: PropTypes.string,
+     /**
+     * Optional className of link
+     */
+     className: PropTypes.string,
 };
 
 Link.defaultProps = {
     id: 'link_id',
+    text:"link",
     onClick: () => {},
     disabled: false,
     variant: 'primary',
     width: '',
+    className:""
 };
 
 export default Link

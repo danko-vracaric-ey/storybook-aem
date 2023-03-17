@@ -3,10 +3,9 @@ import styled, {css} from "styled-components";
 export const StyledHeading = styled.h1`
     text-transform: uppercase;
     backface-visibility: hidden; /*stops it from being shaky, moving slightly up and down*/
-    margin-bottom: 5rem;
-    font-size: 2rem;
-    letter-spacing: 3rem;
-        font-size: 5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2.5rem;
+        font-size: 4.5rem;
         font-weight: 400;
         animation-duration: 1.5s;
 
@@ -50,8 +49,9 @@ export const StyledHeading = styled.h1`
     }
         `};
 
-        @media only screen and (max-width: "425px") {            
-            letter-spacing: 1rem;
-            font-size: 1rem;
-            } 
+        @media (max-width: 425px) {
+            font-size:1rem;
+            letter-spacing:0.8rem;
+            margin-bottom: 1rem;
+  }
 `

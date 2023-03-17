@@ -6,9 +6,10 @@ const TextBox = ({
     id,
    text,
    variant,
+   interactive,
    className
 }) => (
-    <StyledTextBox id={id} className={className} variant={variant}>
+    <StyledTextBox id={id} variant={variant} interactive={interactive} className={className} >
         <span>{text}</span>
     </StyledTextBox>
 );
@@ -27,6 +28,14 @@ TextBox.propTypes = {
      * One of two possible states of text box
      */
      variant: PropTypes.oneOf(['primary', 'secondary']),
+     /**
+     * Optional interactive text box
+     */
+    interactive: PropTypes.bool,
+     /**
+     * Optional className of text box
+     */
+     className: PropTypes.string,
 };
 
 TextBox.defaultProps = {

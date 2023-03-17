@@ -10,11 +10,15 @@ export const StyledLink = styled.a`
       padding: .3rem 3rem;
       transition: all 0.2s;
       position:relative; 
-      width: ${props => props.width === ''  ? '100%' : props.width};
+      /* width: ${props => props.width === ''  ? '100%' : props.width}; */
       text-align: center;
 
       @media (max-width: 768px) {
         padding: 0.15rem 1rem;
+  }
+      @media (max-width: 425px) {
+        font-size: 0.8rem;
+        padding: 0.05rem 0.8rem;
   }
     // NOT DISABLED
     ${(props) => !props.disabled
@@ -28,7 +32,7 @@ export const StyledLink = styled.a`
       }
       &:active {
             box-shadow: 0 0.3rem 0.3rem rgba(0,0,0, 0.4);
-            transform: translateY(3px);
+            transform: translateY(0);
       } 
         `}
     
