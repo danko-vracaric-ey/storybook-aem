@@ -23,7 +23,7 @@ Paragraph.propTypes = {
      */
     text: PropTypes.node.isRequired,
     /**
-     * Optional component class name
+     * Optional paragraph class name
      */
     className: PropTypes.string
 };
