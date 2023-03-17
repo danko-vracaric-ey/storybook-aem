@@ -10,7 +10,6 @@ export const StyledFormTextArea = styled.div`
   }
 
   textarea {
-    /* width: 500px; */
     padding: 10px 20px;
     border: 1px solid #000;
   }
