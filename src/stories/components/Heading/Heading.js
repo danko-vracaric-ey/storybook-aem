@@ -25,11 +25,11 @@ Heading.propTypes = {
      */
     text: PropTypes.node.isRequired,
     /**
-     * Optional you can pass a variant
+     * Optional animation direction
      */
     animationDirection: PropTypes.string,
     /**
-     * Optional animation direction
+     * Optional you can pass a variant
      */
     variant: PropTypes.oneOf(['primary', 'secondary']),
 };
@@ -37,6 +37,7 @@ Heading.propTypes = {
 Heading.defaultProps = {
     id: 'heading_id',
     variant: 'primary',
+    text:'Heading',
     animationDirection:"left"
 };
 

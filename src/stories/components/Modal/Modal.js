@@ -12,10 +12,12 @@ const Modal = ({
     buttonTwoText,
     onCancel,
     onConfirm,
+    className,
+    ...otherProps
 }) => {
 
 return (
-    <StyledModalContainer id={id}>
+    <StyledModalContainer id={id} className={className} {...otherProps}>
         <StyledModalWrapper>
             <StyledContentHolder>
                 <HeadingParagraph text="Modal Heading"/>
@@ -51,6 +53,10 @@ Modal.propTypes = {
      * Optional click handler
      */
     onConfirm: PropTypes.func,
+    /**
+     * Optional modal class name
+     */
+    className: PropTypes.string
 };
 
 Modal.defaultProps = {

@@ -10,27 +10,30 @@ export const StyledLink = styled.a`
       padding: .3rem 3rem;
       transition: all 0.2s;
       position:relative; 
-      width: ${props => props.width === ''  ? '100%' : props.width};
+      /* width: ${props => props.width === ''  ? '100%' : props.width}; */
       text-align: center;
- 
+
+      @media (max-width: 768px) {
+        padding: 0.15rem 1rem;
+  }
+      @media (max-width: 425px) {
+        font-size: 0.8rem;
+        padding: 0.05rem 0.8rem;
+  }
     // NOT DISABLED
     ${(props) => !props.disabled
         && css`
         &:hover {
             background-color: ${props => props.variant === "primary" ? '#C25E5E' : '#728434'};
             transform: translateY(-3px);
-            box-shadow: 0 0.7rem 1.7rem rgba(0,0,0, 0.8);
+            box-shadow: 0 0.7rem 1.6rem rgba(0,0,0, 0.8);
             color: white;
             cursor: pointer;
       }
       &:active {
             box-shadow: 0 0.3rem 0.3rem rgba(0,0,0, 0.4);
-            transform: translateY(3px);
-      }
-      @media only screen and (min-width: "768px") {            
-            width: auto;        
-            padding: 0.15rem 0.15rem;
-        }       
+            transform: translateY(0);
+      } 
         `}
     
     //DISABLED
@@ -39,10 +42,6 @@ export const StyledLink = styled.a`
          color: black;
         border: 1px solid black;
         cursor: not-allowed;
-        transition: none; 
-        @media only screen and (min-width: "768px") {            
-            width: auto;        
-            padding: 0.15rem 0.15rem;
-        }      
+        transition: none;      
     `}      
 `
