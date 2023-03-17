@@ -1,26 +1,26 @@
 import styled from "styled-components";
 
-export const StyledFormTextInput = styled.div`
+export const StyledFormTextArea = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 16px;
 
-  /* label {
-    margin-bottom: 10px;
-  } */
+  label {
+    font-size: 1.5rem;
+  }
 
-  input {
-    width: 250px;
+  textarea {
+    /* width: 500px; */
     padding: 10px 20px;
     border: 1px solid #000;
   }
 
-  input:focus {
+  textarea:focus {
     border: none;
     outline: 2px solid #000;
   }
 
-  input::placeholder {
+  textarea::placeholder {
     color: #494949;
     border: none;
   }

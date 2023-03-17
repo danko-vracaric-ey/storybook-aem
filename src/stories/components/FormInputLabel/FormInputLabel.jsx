@@ -1,3 +1,9 @@
+import { StyledFormInputLabel } from "./FormInputLabel.styled";
+
 export const FormInputLabel = ({ labelText, labelForWhat }) => {
-  return <label htmlFor={labelForWhat}>{labelText}</label>;
+  return (
+    <StyledFormInputLabel htmlFor={labelForWhat}>
+      {labelText}
+    </StyledFormInputLabel>
+  );
 };
