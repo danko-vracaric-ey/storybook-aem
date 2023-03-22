@@ -20,6 +20,8 @@ export const Primary = Template.bind({});
 export const PrimaryDisabled = Template.bind({});
 export const Secondary = Template.bind({});
 export const SecondaryDisabled = Template.bind({});
+export const Default = Template.bind({});
+export const DefaultDisabled = Template.bind({});
 
 
 Primary.args = {
@@ -52,4 +54,20 @@ SecondaryDisabled.args = {
     disabled: true,
     argTypes: { onClick: { action: 'clicked' } },
     variant: 'secondary'
+};
+
+Default.args = {
+    id: 'link_id',
+    text: 'link',
+    disabled: false,
+    argTypes: { onClick: { action: 'clicked' } },
+    variant: 'default'
+};
+
+DefaultDisabled.args = {
+    id: 'link_id',
+    text: 'link',
+    disabled: true,
+    argTypes: { onClick: { action: 'clicked' } },
+    variant: 'default'
 };
