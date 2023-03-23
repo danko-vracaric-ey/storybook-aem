@@ -24,8 +24,11 @@ export const StyledLink = styled.a`
 
   ${(props)=>(props.variant === "default") && css`
     border: none;
-    color: black;
+    color:  rgba(83,200,237);
     padding: 0;
+    &:hover {
+      color:#3b82f680;
+    }
 
     @media (max-width: 768px) {
         padding: 0;
@@ -63,6 +66,10 @@ export const StyledLink = styled.a`
     && css`
          color: black;
         cursor: not-allowed;
-        transition: none;      
+        transition: none;  
+
+        &:hover{
+          color: black;
+        }
     `}      
 `

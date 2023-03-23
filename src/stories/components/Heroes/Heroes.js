@@ -24,7 +24,7 @@ const Heroes = ({
 
 Heroes.propTypes = {
     /**
-     * ImageLink id
+     * Heroes id
      */
     id: PropTypes.string,
     /**
@@ -44,7 +44,7 @@ Heroes.propTypes = {
      */
       variant: PropTypes.oneOf(['small', 'medium','large']),
      /**
-     * Optional ImageLink class name
+     * Optional Heroes class name
      */
        className: PropTypes.string,
 };
