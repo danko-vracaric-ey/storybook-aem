@@ -5,7 +5,7 @@ export const Loading = ({ active, small, loadingText }) => {
   return (
     <StyledLoader className="loader-container" active={active} small={small}>
       <div className="loader"></div>
-      <p className="loader-text">{loadingText}</p>
+      {loadingText ? <p className="loader-text">{loadingText}</p> : null}
     </StyledLoader>
   );
 };
@@ -13,5 +13,5 @@ export const Loading = ({ active, small, loadingText }) => {
 Loading.defaultProps = {
   active: true,
   small: false,
-  loadingText: "Loading...",
+  loadingText: "",
 };
