@@ -22,7 +22,7 @@ export const StyledSkeletonText = styled.div`
       height: 25px;
       width: 100%;
       background-color: rgba(78, 78, 78, 0.95);
-      filter: blur(5px);
+      filter: blur(2px);
       animation: 2.5s skeleton-loading linear infinite 1s;
     }
 
@@ -35,13 +35,12 @@ export const StyledSkeletonText = styled.div`
       100% {
         background-color: rgba(206, 206, 206, 0.75);
         opacity: 1;
-        width: 100%;
+        width: 110%;
       }
     }
   }
 
   ${({ variant }) =>
-    // (variant === "double" || variant === "paragraph") &&
     variant !== "single" &&
     css`
       .skeleton-text:last-child {

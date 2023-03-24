@@ -46,7 +46,7 @@ export const StyledSkeletonIcon = styled.div`
           width: 60px;
         `)}
     background-color: rgba(78, 78, 78, 0.95);
-    filter: blur(3px);
+    filter: blur(2px);
     animation: 2.5s skeleton-loading linear infinite 1s;
   }
 
@@ -59,16 +59,7 @@ export const StyledSkeletonIcon = styled.div`
     100% {
       background-color: rgba(206, 206, 206, 0.75);
       opacity: 1;
-      width: 25px;
-      ${({ size }) =>
-        (size === "medium" &&
-          css`
-            width: 48px;
-          `) ||
-        (size === "large" &&
-          css`
-            width: 60px;
-          `)}
+      width: 110%;
     }
   }
 `;
