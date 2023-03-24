@@ -8,6 +8,8 @@ import Button from '../Button/Button';
 
 const Modal = ({
     id,
+    modalHeading,
+    modalContent,
     buttonOneText,
     buttonTwoText,
     onCancel,
@@ -20,9 +22,9 @@ return (
     <StyledModalContainer id={id} className={className} {...otherProps}>
         <StyledModalWrapper>
             <StyledContentHolder>
-                <HeadingParagraph text="Modal Heading"/>
-                <Paragraph text="Content text"/>
+                <HeadingParagraph text={modalHeading}/>
             </StyledContentHolder>
+                <Paragraph text={modalContent}/>
             <StyledButtonsWrapper>
             <Button mr={10} label={buttonOneText} onClick={onCancel}/>
             <Button ml={10} label={buttonTwoText} onClick={onConfirm}/>
@@ -37,6 +39,14 @@ Modal.propTypes = {
      * Modal id
      */
     id: PropTypes.string,
+    /**
+     * Modal heading
+     */
+    modalHeading: PropTypes.string,
+    /**
+     * Modal content
+     */
+    modalContent: PropTypes.string,
     /**
      * Text displayed in the button
      */
