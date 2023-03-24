@@ -1,8 +1,6 @@
 import styled, { css } from "styled-components";
 
 export const StyledSkeletonText = styled.div`
-  /* width: 100%; */
-
   .skeleton-text {
     position: relative;
     overflow: hidden;
@@ -24,7 +22,8 @@ export const StyledSkeletonText = styled.div`
       height: 25px;
       width: 100%;
       background-color: rgba(78, 78, 78, 0.95);
-      animation: 1.5s skeleton-loading linear infinite 1s;
+      filter: blur(5px);
+      animation: 2.5s skeleton-loading linear infinite 1s;
     }
 
     @keyframes skeleton-loading {

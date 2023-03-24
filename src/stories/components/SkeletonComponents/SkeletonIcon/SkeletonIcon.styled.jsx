@@ -46,7 +46,8 @@ export const StyledSkeletonIcon = styled.div`
           width: 60px;
         `)}
     background-color: rgba(78, 78, 78, 0.95);
-    animation: 1.5s skeleton-loading linear infinite 1s;
+    filter: blur(3px);
+    animation: 2.5s skeleton-loading linear infinite 1s;
   }
 
   @keyframes skeleton-loading {
