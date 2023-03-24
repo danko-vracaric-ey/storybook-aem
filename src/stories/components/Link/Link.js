@@ -38,7 +38,7 @@ Link.propTypes = {
     /**
      * Optional you can pass secondary variant
      */
-    variant: PropTypes.oneOf(['primary', 'secondary']),
+    variant: PropTypes.oneOf(['primary', 'secondary', "default"]),
      /**
      * Optional width of link
      */

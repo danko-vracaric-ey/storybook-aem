@@ -8,7 +8,7 @@ const Paragraph = ({
    className
 }) => (
     <StyledParagraph id={id} className={className}>
-        <span>{text}</span>
+        {text}
     </StyledParagraph>
 );
 
