@@ -6,6 +6,7 @@ export const StyledLabel = styled.p`
 display: flex;
 flex-direction: row;
 margin: 0;
+margin-right: 5px;
 `
 
 export const StyledLogo = styled(BaseImage)`

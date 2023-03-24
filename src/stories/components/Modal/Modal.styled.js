@@ -19,22 +19,41 @@ export const StyledModalWrapper = styled.div`
   padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   background-color: white;
   box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem  black;
   border-radius: 3px;
+  text-align: center;
+
+  @media (max-width: 768px) {
+       width: 65vw;
+       height: 45vh;
+  }
+  @media (max-height: 768px) {
+    height: 70vh;
+       
+  }
 `
 
 export const StyledContentHolder = styled.div`
-    position: absolute;
-    top:20%;
     text-align: center;
 `
 export const StyledButtonsWrapper = styled.div`
-    position: absolute;
-    bottom: 20%;
+    
     height: 60px;
     display: flex;
     justify-content: space-around;
+
+    button{
+      @media (max-width: 768px) {
+       height: 30px;
+  }
+      @media (max-width: 425px) {
+        height: 20px;
+  }
+  @media (max-height: 768px) {
+    height: 30px;
+  }
+    }
 `

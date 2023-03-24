@@ -19,8 +19,8 @@ export const Opened = Template.bind({});
 
 Opened.args = {
     id: 'text-box-id',
-    text: 'Content',
+    modalHeading: "Modal Heading",
+    modalContent: "Some modal text",
     buttonOneText: "Cancel",
     buttonTwoText: "Confirm"
-
 };
