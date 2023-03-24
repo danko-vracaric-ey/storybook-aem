@@ -26,7 +26,7 @@ ${props => props.variant === "medium" && css`
         padding: 2rem 0.7rem;
   }
 ${props => props.variant === "large" && css`
-    height: 800px;
+    height: 600px;
     background-position: top;
     justify-content: center;
 
