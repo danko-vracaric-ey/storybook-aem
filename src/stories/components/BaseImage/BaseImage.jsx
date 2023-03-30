@@ -49,10 +49,6 @@ BaseImage.propTypes = {
    */
   imgClass: PropTypes.string,
   /**
-   * Wrapper class
-   */
-  wrapperClass: PropTypes.string,
-  /**
    * Scale image to fit its container
    */
   objectFit: PropTypes.oneOf(["fill", "cover", "contain", "scale-down, none"]),

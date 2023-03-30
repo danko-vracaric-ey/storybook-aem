@@ -20,7 +20,10 @@ const BaseDropdown = ({
   );
 };
 
-BaseDropdown.propTypes = {};
+BaseDropdown.propTypes = {
+  labelText: PropTypes.string,
+  optionsList: PropTypes.arrayOf(PropTypes.string),
+};
 
 BaseDropdown.defaultProps = {
   labelText: "Select something:",

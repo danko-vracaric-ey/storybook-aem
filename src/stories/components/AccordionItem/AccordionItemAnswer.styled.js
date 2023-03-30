@@ -1,18 +1,21 @@
 import styled from "styled-components";
 
-export const StyledAccordionItem = styled.li`
-  list-style-type: none;
-  width: 100%;
+export const StyledAccordionItemAnswer = styled.div`
+  padding: 0 20px;
 
-  .li-border-top,
-  .li-border-bot {
+  & .p-border-top {
     height: 2px;
     width: 100%;
     background-image: linear-gradient(
       to right,
       transparent 1%,
-      #000 50%,
+      lightgray 50%,
       transparent 99%
     );
+  }
+
+  & p {
+    margin: 0;
+    padding: 10px 0;
   }
 `;
