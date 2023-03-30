@@ -3,7 +3,7 @@ import React from "react";
 const BaseDropdownOptionsList = ({ list }) => {
   return (
     <>
-      {list.map((option) => {
+      {list.map?.((option) => {
         let capitalize;
 
         if (option.length === 0) capitalize = option;
