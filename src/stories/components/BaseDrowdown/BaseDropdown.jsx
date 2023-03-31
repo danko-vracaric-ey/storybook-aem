@@ -21,7 +21,13 @@ const BaseDropdown = ({
 };
 
 BaseDropdown.propTypes = {
+  /*
+   * Name for the drowdown label
+   */
   labelText: PropTypes.string,
+  /*
+   * A list (array) of strings to be shown in the dropdown
+   */
   optionsList: PropTypes.arrayOf(PropTypes.string),
 };
 
