@@ -11,7 +11,6 @@ export const StyledLink = styled.a`
   padding: 0.3rem 3rem;
   transition: all 0.2s;
   position: relative;
-  width: ${(props) => (props.width === "" ? "100%" : props.width)};
   text-align: center;
   cursor: pointer;
 
